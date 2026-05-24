@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giri | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <!-- Ambient Background Orbs -->
+  <div class="bg-orb orb-purple"></div>
+  <div class="bg-orb orb-violet"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Portfolio</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu-toggle">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-text">
+        <h2>Hi There! 👋</h2>
+        <h1>I'M <span class="highlight">GIRI</span></h1>
+        <p><span class="typed-text"></span><span class="cursor">|</span></p>
+      </div>
+      <div class="hero-image">
+        <img id="profile-image" src="GIRI.png" alt="Giri G's profile picture" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container fade-in">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm GIRI, a passionate developer and Aspiring Software Developer. I enjoy building
+        visually appealing and responsive websites while continuously learning new technologies.
+        I have completed front-end internships, worked on multiple personal projects, and I'm
+        exploring backend tools and cloud services.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container fade-in">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
+        <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+        <div class="skill-card"><i class="fab fa-js"></i><span>Javascript</span></div>
+
+        <div class="skill-card"><i class="fab fa-java"></i><span>Java</span></div>
+        <div class="skill-card"><i class="fas fa-leaf"></i><span>SpringBoot</span></div>
+        <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+        <div class="skill-card"><i class="fas fa-database"></i><span>SQL</span></div>
+        <div class="skill-card"><i class="fas fa-chart-line"></i><span>Data Analytics</span></div>
+        <div class="skill-card"><i class="fab fa-microsoft"></i><span>Microsoft Office</span></div>
+        <div class="skill-card"><i class="fab fa-github"></i><span>Git & Github</span></div>
+        <div class="skill-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+        <div class="skill-card"><i class="fas fa-network-wired"></i><span>DSA</span></div>
+        <div class="skill-card"><i class="fas fa-server"></i><span>RESTful APIs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container fade-in">
+      <h2 class="section-title">My Services</h2>
+      <div class="services-grid">
+        <a href="https://cirravo.free.nf/" target="_blank" class="service-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Development</h3>
+          <p>Building responsive, modern, and visually appealing websites tailored to your needs.</p>
+        </a>
+        <a href="https://cirravo.free.nf/" target="_blank" class="service-card">
+          <i class="fas fa-cloud"></i>
+          <h3>SaaS Development</h3>
+          <p>End-to-end development of scalable Cloud-based Software as a Service solutions.</p>
+        </a>
+        <a href="https://cirravo.free.nf/" target="_blank" class="service-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Mobile App Development</h3>
+          <p>Crafting intuitive and functional mobile applications for Android and iOS devices.</p>
+        </a>
+        <a href="https://cirravo.free.nf/" target="_blank" class="service-card">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Digital Marketing</h3>
+          <p>Strategic digital marketing services to boost your online presence and reach.</p>
+        </a>
+        <a href="https://cirravo.free.nf/" target="_blank" class="service-card">
+          <i class="fas fa-robot"></i>
+          <h3>Automations</h3>
+          <p>Streamlining workflows and operations with custom automated solutions to improve efficiency.</p>
+        </a>
+      </div>
+      <div class="carousel-dots" id="services-dots"></div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://cirravosolutions.co.in/" target="_blank" class="btn">View Cirravo Solutions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container fade-in">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+
+      </div>
+      <div class="project-grid">
+        <div class="project-card" data-category="java">
+          <h3>Safex – Offline Password Vault</h3>
+          <p>A secure, <strong>offline Android password manager app</strong> focused on privacy. It features strong
+            <strong>local encryption</strong> and an intuitive UI, ensuring users can safely store and manage their
+            credentials without requiring cloud synchronization or internet connectivity.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/Safex---Password-Vault" target="_blank"
+              aria-label="View Safex on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="java">
+          <h3>CivicCare – Emergency & Blood Support</h3>
+          <p>A <strong>backend-driven</strong> emergency support system that provides <strong>REST APIs</strong> for
+            managing blood donors and emergency
+            requests. Built using <strong>Java</strong> and <strong>Spring Boot</strong> with a <strong>layered
+              architecture</strong> and <strong>MySQL</strong> for reliable data
+            persistence and <strong>real-time</strong> information retrieval.</p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/civiccare-backend" target="_blank"
+              aria-label="View CivicCare on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="web python">
+          <h3>ServiceLink – Local Service Booking</h3>
+          <p>A <strong>full-stack</strong> service booking application that allows users to discover and book local
+            services such as
+            electricians and plumbers. Features <strong>RESTful backend APIs</strong> built with <strong>Flask</strong>
+            and <strong>MySQL</strong>, integrated with a
+            <strong>React-based frontend</strong> for dynamic user interaction.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/service-link" target="_blank" aria-label="View ServiceLink on GitHub"><i
+                class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="apex web">
+          <h3>E-Commerce Website</h3>
+          <p>The final project of my ApexPlanet internship, built using <strong>HTML</strong>, <strong>CSS</strong>, and
+            <strong>JavaScript</strong>. It features <strong>dynamic
+              product listings</strong>, <strong>category filtering</strong>, <strong>search functionality</strong>, and
+            an <strong>interactive cart</strong> with <strong>local storage</strong>.
+            Designed for <strong>responsive performance</strong>, this project showcases my full frontend development
+            skills and
+            attention to user experience optimization.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/ApexPlanet-Web/tree/main/Task-5" target="_blank"
+              aria-label="View E-Commerce Website on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="codsoft java">
+          <h3>Quiz Application with Timer</h3>
+          <p>A <strong>Java</strong> project from my CodSoft virtual internship featuring <strong>multiple-choice
+              questions</strong>, a <strong>10-second
+              countdown timer</strong>, <strong>real-time feedback</strong>, and <strong>automatic score
+              calculation</strong>, highlighting my skills in interactive
+            programming and user engagement.</p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/CODSOFT-JAVA/tree/main/Task-4" target="_blank"
+              aria-label="View Quiz Application with Timer on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="apex web">
+          <h3>Multi-Page Web App</h3>
+          <p>A versatile project from my ApexPlanet internship, featuring a <strong>portfolio</strong>, <strong>to-do
+              list</strong>, <strong>product showcase</strong>, and
+            <strong>shopping cart</strong>. Built with <strong>HTML</strong>, <strong>CSS</strong>, and
+            <strong>JavaScript</strong>, it demonstrates my expertise in <strong>responsive design</strong>,
+            interactivity, and clean code structure.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/ApexPlanet-Web/tree/main/Task-4" target="_blank"
+              aria-label="View Multi-Page Web App on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="codsoft java">
+          <h3>ATM Interface</h3>
+          <p>A <strong>Java-based simulation</strong> developed during my CodSoft virtual internship, featuring
+            <strong>withdrawal</strong>, <strong>deposit</strong>, and
+            <strong>balance check</strong> operations, <strong>secure input validation</strong>, and a <strong>modular
+              design</strong> for intuitive banking functionality,
+            showcasing my programming and problem-solving skills.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/CODSOFT-JAVA/tree/main/Task-3" target="_blank"
+              aria-label="View ATM Interface on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="apex web">
+          <h3>Quiz & Weather App</h3>
+          <p>A dynamic web app built during my ApexPlanet internship using <strong>HTML</strong>, <strong>CSS</strong>,
+            and <strong>JavaScript</strong>. It features
+            <strong>real-time weather updates (OpenWeatherMap API)</strong>, <strong>interactive quizzes</strong>,
+            <strong>score tracking</strong>, and a <strong>responsive UI</strong>,
+            highlighting my skills in frontend development and API integration.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/ApexPlanet-Web/tree/main/Task-3" target="_blank"
+              aria-label="View Quiz & Weather App on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="codsoft java">
+          <h3>Number Guessing Game</h3>
+          <p>A <strong>console-based Java game</strong> developed during my CodSoft virtual internship. Features include
+            <strong>random number
+              generation</strong>, <strong>high/low feedback</strong>, <strong>limited attempts</strong> with scoring,
+            and a <strong>replayable menu</strong>, showcasing my Java
+            programming and problem-solving skills.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/CODSOFT-JAVA/tree/main/Task-1" target="_blank"
+              aria-label="View Number Guessing Game on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="codsoft java">
+          <h3>Student Grade Calculator</h3>
+          <p>A <strong>Java program</strong> developed during my CodSoft virtual internship. It <strong>calculates total
+              marks</strong>, <strong>percentage</strong>, and
+            <strong>grades</strong> for multiple subjects, with <strong>dynamic grade assignment</strong> and
+            <strong>input validation</strong>, demonstrating my
+            programming and logical problem-solving skills.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/CODSOFT-JAVA/tree/main/Task-2" target="_blank"
+              aria-label="View Student Grade Calculator on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="apex web">
+          <h3>Contact Form</h3>
+          <p>A <strong>responsive</strong> and modern contact form built using <strong>HTML</strong>,
+            <strong>CSS</strong>, and <strong>JavaScript</strong> during my ApexPlanet internship.
+            Features include <strong>input validation</strong>, a <strong>clean UI</strong>, and <strong>mobile-friendly
+              design</strong> for a smooth user experience.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/ApexPlanet-Web/tree/main/Task-2" target="_blank"
+              aria-label="View Contact Form on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="java">
+          <h3>Basic-Calculator</h3>
+          <p>A simple <strong>Java applet</strong> calculator that performs <strong>basic arithmetic operations</strong>
+            with a <strong>user-friendly interface</strong>.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1amgiri/Basic-Calculator" target="_blank"
+              aria-label="View Basic Calculator on GitHub"><i class="fab fa-github"></i> View Code</a>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="carousel-dots" id="projects-dots"></div>
+      
+      <!-- View All Projects Button -->
+      <div id="view-all-projects-container" style="text-align: center; margin-top: 40px;">
+        <button id="view-all-projects-btn" class="btn">View All Projects</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="achievements" id="achievements">
+    <div class="container fade-in">
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements-list">
+        <div class="achievement-item">
+          <i class="fas fa-trophy"></i>
+          <p><strong>Solved more than 150+ Coding problems</strong> in LeetCode, GeeksforGeeks.</p>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-certificate"></i>
+          <p><strong>SQL & Python Certificates</strong> from HackerRank.</p>
+        </div>
+        <div class="achievement-item">
+          <i class="fas fa-code-branch"></i>
+          <p><strong>Open Source Contribution:</strong> Code successfully merged into the <a
+              href="https://github.com/1amgiri/open-spring-lab" target="_blank"
+              style="color: var(--secondary-color); text-decoration: none;">open-spring-lab</a> repository on GitHub.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section class="resume" id="resume">
+    <div class="container fade-in">
+      <h2 class="section-title">Resume</h2>
+      <p>You can download my resume in PDF format below:</p>
+      <a href="Giri_resume.pdf" class="btn" target="_blank">View / Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container fade-in">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Feel free to reach out via email or connect with me on social media.</p>
+      <div class="contact-links">
+        <a href="mailto:yadavgiri406@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/giri-g-a80884308/" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/1amgiri" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Giri G. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
