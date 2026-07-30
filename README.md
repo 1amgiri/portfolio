@@ -3,7 +3,7 @@
 Welcome to my personal portfolio repository! This website showcases my projects, skills, academic achievements, and provides a way to get in touch with me.
 
 ## 🚀 Live Demo
-*(Add your live hosting link here)*
+https://1amgiri.github.io/portfolio/
 
 ## ✨ Features
 - **Responsive Design**: Fully responsive across mobile, tablet, and desktop screens.
