@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // Typing effect
-  const roles = ["Developer", "Programmer", "Aspiring Software Developer"];
+  const roles = ["Aspiring Software Developer", "Solved 150+ Coding Problems", "Completed BCA with 8.7CGPA"];
   let currentRole = 0;
   let charIndex = 0;
   let typing = true;
